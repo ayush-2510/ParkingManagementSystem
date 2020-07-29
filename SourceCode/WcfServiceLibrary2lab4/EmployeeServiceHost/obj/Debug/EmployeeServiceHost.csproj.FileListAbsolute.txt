@@ -1,0 +1,24 @@
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe.config
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.csprojResolveAssemblyReference.cache
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\WcfServiceLibrary2lab4.dll
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\WcfServiceLibrary2lab4.pdb
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.exe
+c:\users\user1\documents\visual studio 2015\Projects\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.pdb
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe.config
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.pdb
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\WcfServiceLibrary2lab4.dll
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\WcfServiceLibrary2lab4.pdb
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.exe
+C:\Users\user1\Desktop\lab4\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.pdb
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.csprojResolveAssemblyReference.cache
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.exe
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\obj\Debug\EmployeeServiceHost.pdb
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe.config
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.exe
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\EmployeeServiceHost.pdb
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\WcfServiceLibrary2lab4.dll
+H:\ParkingManagementSystem\WcfServiceLibrary2lab4\EmployeeServiceHost\bin\Debug\WcfServiceLibrary2lab4.pdb
