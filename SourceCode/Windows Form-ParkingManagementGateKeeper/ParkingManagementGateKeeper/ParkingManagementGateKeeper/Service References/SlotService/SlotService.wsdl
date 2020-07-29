@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SlotService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/WcfServiceLibrary2lab4/Service1/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/WcfServiceLibrary2lab4/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/WcfServiceLibrary2lab4/Service1/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8080/WcfServiceLibrary2lab4/Service1/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary2lab4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISlotService_available_section_InputMessage">
+    <wsdl:part name="parameters" element="tns:available_section" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_available_section_OutputMessage">
+    <wsdl:part name="parameters" element="tns:available_sectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_available_floor_InputMessage">
+    <wsdl:part name="parameters" element="tns:available_floor" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_available_floor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:available_floorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_available_type_InputMessage">
+    <wsdl:part name="parameters" element="tns:available_type" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_available_type_OutputMessage">
+    <wsdl:part name="parameters" element="tns:available_typeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_addSlots_InputMessage">
+    <wsdl:part name="parameters" element="tns:addSlots" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_addSlots_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addSlotsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_removeSlots_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeSlots" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_removeSlots_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeSlotsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_showAllSlots_InputMessage">
+    <wsdl:part name="parameters" element="tns:showAllSlots" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_showAllSlots_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showAllSlotsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_bookSlot_InputMessage">
+    <wsdl:part name="parameters" element="tns:bookSlot" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_bookSlot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bookSlotResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_cancelBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:cancelBooking" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_cancelBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cancelBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_exitVehicle_InputMessage">
+    <wsdl:part name="parameters" element="tns:exitVehicle" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_exitVehicle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:exitVehicleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_makePayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:makePayment" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_makePayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:makePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_showBookings_InputMessage">
+    <wsdl:part name="parameters" element="tns:showBookings" />
+  </wsdl:message>
+  <wsdl:message name="ISlotService_showBookings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:showBookingsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISlotService">
+    <wsdl:operation name="available_section">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/available_section" message="tns:ISlotService_available_section_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/available_sectionResponse" message="tns:ISlotService_available_section_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="available_floor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/available_floor" message="tns:ISlotService_available_floor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/available_floorResponse" message="tns:ISlotService_available_floor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="available_type">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/available_type" message="tns:ISlotService_available_type_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/available_typeResponse" message="tns:ISlotService_available_type_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addSlots">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/addSlots" message="tns:ISlotService_addSlots_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/addSlotsResponse" message="tns:ISlotService_addSlots_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeSlots">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/removeSlots" message="tns:ISlotService_removeSlots_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/removeSlotsResponse" message="tns:ISlotService_removeSlots_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="showAllSlots">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/showAllSlots" message="tns:ISlotService_showAllSlots_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/showAllSlotsResponse" message="tns:ISlotService_showAllSlots_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bookSlot">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/bookSlot" message="tns:ISlotService_bookSlot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/bookSlotResponse" message="tns:ISlotService_bookSlot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/cancelBooking" message="tns:ISlotService_cancelBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/cancelBookingResponse" message="tns:ISlotService_cancelBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="exitVehicle">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/exitVehicle" message="tns:ISlotService_exitVehicle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/exitVehicleResponse" message="tns:ISlotService_exitVehicle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="makePayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/makePayment" message="tns:ISlotService_makePayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/makePaymentResponse" message="tns:ISlotService_makePayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="showBookings">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISlotService/showBookings" message="tns:ISlotService_showBookings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISlotService/showBookingsResponse" message="tns:ISlotService_showBookings_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISlotService" type="tns:ISlotService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="available_section">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/available_section" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="available_floor">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/available_floor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="available_type">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/available_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSlots">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/addSlots" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeSlots">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/removeSlots" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showAllSlots">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/showAllSlots" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookSlot">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/bookSlot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelBooking">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/cancelBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exitVehicle">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/exitVehicle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="makePayment">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/makePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showBookings">
+      <soap:operation soapAction="http://tempuri.org/ISlotService/showBookings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SlotService">
+    <wsdl:port name="BasicHttpBinding_ISlotService" binding="tns:BasicHttpBinding_ISlotService">
+      <soap:address location="http://localhost:8080/WcfServiceLibrary2lab4/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
